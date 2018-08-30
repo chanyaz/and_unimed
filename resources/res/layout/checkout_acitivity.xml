@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/screenBgColor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="top" android:id="@+id/FeedLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/emptyspace" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/placeholder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/emptyspace">
+            <include layout="@layout/billing_address"/>
+            <include layout="@layout/shipping_address"/>
+            <include layout="@layout/shipping_method"/>
+            <include layout="@layout/order_review"/>
+            <include layout="@layout/payment_method"/>
+            <include layout="@layout/order_complete"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/actions" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/placeholder">
+            <Button android:id="@+id/back" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_weight="0.5"/>
+            <Button android:id="@+id/next" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_weight="0.5"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

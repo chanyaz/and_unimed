@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="top" android:id="@+id/FeedLayout" android:background="@color/screenBgColor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/emptyspace" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+    <ListView android:id="@+id/FeedsList" android:background="@color/screenBgColor" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/screenBgColor" android:dividerHeight="1dp" android:layout_above="@+id/separator" android:layout_below="@+id/emptyspace"/>
+    <View android:id="@+id/separator" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="2dp" android:layout_above="@+id/addCommentLayout"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/addCommentLayout" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <EditText android:textSize="15sp" android:textColor="#000000" android:textColorHint="#a9a9a9" android:id="@+id/commentBox" android:background="@android:color/transparent" android:padding="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="Type Message" android:maxLines="3" android:layout_weight="0.5" android:inputType="textMultiLine"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/sendComment" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/send_icon" android:scaleType="fitCenter"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/hiddenaddCommentLayout" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.puzzlersworld.android.util.EditTextBackEvent android:textSize="15sp" android:textColor="#000000" android:gravity="start" android:id="@+id/hiddencommentBox" android:background="@android:color/transparent" android:padding="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="Type Reply Message" android:maxLines="3" android:layout_weight="0.5" android:inputType="textMultiLine"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/hiddensendComment" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/send_icon" android:scaleType="fitCenter"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.puzzlersworld.android.util.CustomFontTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="18sp" android:textColor="#808080" android:ellipsize="marquee" android:id="@android:id/text1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="[Select a Planet...]" android:singleLine="true" style="?android:attr/spinnerItemStyle"/>

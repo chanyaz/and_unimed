@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="fill_vertical" android:orientation="horizontal" android:id="@+id/commentLayout" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+        <EditText android:id="@+id/first_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:inputType="textPersonName"/>
+        <EditText android:id="@+id/last_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/first_name" android:inputType="textPersonName"/>
+        <EditText android:id="@+id/email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/last_name" android:inputType="textEmailAddress"/>
+        <EditText android:id="@+id/user_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/email" android:inputType="textPersonName"/>
+        <EditText android:id="@+id/password" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/user_name" android:inputType="textPassword"/>
+        <EditText android:id="@+id/repassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/password" android:inputType="textPassword"/>
+        <Button android:id="@+id/enter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/submit" android:layout_below="@+id/repassword" style="?attr/metaButtonBarButtonStyle"/>
+    </RelativeLayout>
+</ScrollView>

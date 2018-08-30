@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="0dp" android:paddingRight="5dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="0dp" style="@style/Widget.ActionButton">
+    <ImageView android:gravity="center" android:id="@+id/cart_icon" android:layout_width="35dp" android:layout_height="wrap_content" android:layout_margin="0dp" android:src="@drawable/cart"/>
+    <com.puzzlersworld.android.util.CustomFontTextView android:textSize="14sp" android:textStyle="bold" android:textColor="#000" android:id="@+id/cart_counts" android:background="@drawable/badge_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/cart_icon" android:layout_alignRight="@+id/cart_icon"/>
+</RelativeLayout>

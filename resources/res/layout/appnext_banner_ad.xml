@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/appNextBannerAd" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="50dp">
+    <LinearLayout android:id="@+id/banner_view" android:background="#f6f6f6" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:id="@+id/icon" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="#000000" android:ellipsize="end" android:id="@+id/title" android:paddingLeft="3dp" android:paddingRight="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1"/>
+            <TextView android:textSize="13sp" android:textColor="#818285" android:id="@+id/rating" android:paddingLeft="3dp" android:paddingRight="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/star" android:drawableEnd="@drawable/star"/>
+        </LinearLayout>
+        <Button android:textSize="15sp" android:textColor="#ffffff" android:layout_gravity="center" android:id="@+id/install" android:background="#8dc63f" android:layout_width="100dp" android:layout_height="37dp"/>
+    </LinearLayout>
+    <View android:id="@+id/click" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="50dp"/>
+    <ImageView android:id="@+id/privacy" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/privacy_icon" android:scaleType="fitXY" android:layout_alignParentLeft="true"/>
+</RelativeLayout>

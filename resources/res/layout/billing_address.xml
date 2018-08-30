@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/billingaddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+    <com.puzzlersworld.android.util.CustomFontTextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/billingaddressHeader" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText android:theme="@style/MyMaterialTheme" android:id="@+id/first_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:imeOptions="actionNext"/>
+    <EditText android:theme="@style/MyMaterialTheme" android:id="@+id/last_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:imeOptions="actionNext"/>
+    <EditText android:theme="@style/MyMaterialTheme" android:id="@+id/email" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="textEmailAddress" android:imeOptions="actionNext"/>
+    <EditText android:theme="@style/MyMaterialTheme" android:id="@+id/phone" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="phone" android:imeOptions="actionNext"/>
+    <EditText android:theme="@style/MyMaterialTheme" android:id="@+id/address1" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:imeOptions="actionNext"/>
+    <EditText android:theme="@style/MyMaterialTheme" android:id="@+id/address2" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:imeOptions="actionNext"/>
+    <EditText android:theme="@style/MyMaterialTheme" android:id="@+id/postcode" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="number" android:imeOptions="actionNext"/>
+    <EditText android:theme="@style/MyMaterialTheme" android:id="@+id/city" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:imeOptions="actionDone"/>
+    <Spinner android:id="@+id/country_spinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:imeOptions="actionNext"/>
+    <Spinner android:id="@+id/state_spinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:imeOptions="actionNext"/>
+</LinearLayout>

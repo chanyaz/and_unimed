@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/screenBgColor" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/cartErrorLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.puzzlersworld.android.util.CustomFontTextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/cartError" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+            <Button android:id="@+id/reload" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/cartEmptyLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.puzzlersworld.android.util.CustomFontTextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/cartEmpty" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+            <Button android:id="@+id/shop" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/cartDetails" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/cartItems" android:background="@color/screenBgColor" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/couponLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_below="@+id/FeedsList">
+                <EditText android:theme="@style/MyMaterialTheme" android:id="@+id/couponCode" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <Button android:id="@+id/applyCoupon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/couponDetailsLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_below="@+id/couponLayout"/>
+            <include layout="@layout/display_price"/>
+            <Button android:id="@+id/checkout" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="5dp" android:layout_below="@+id/price_details"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

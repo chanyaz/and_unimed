@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">\10.\10
+    <item android:id="@+id/cart" android:orderInCategory="97" android:title="Items" app:showAsAction="always" app:actionLayout="@layout/cart_count"/>
+    <item android:icon="@drawable/share_menu" android:id="@+id/share" android:orderInCategory="98" android:title="Share" app:showAsAction="always"/>
+    <item android:icon="@drawable/book_unselected" android:id="@+id/saveforlater" android:orderInCategory="99" android:title="Save For Later" app:showAsAction="always"/>
+    <item android:icon="@drawable/book_selected" android:id="@+id/deleteOfflinePost" android:orderInCategory="100" android:title="Remove from Saved Posts" app:showAsAction="always"/>
+</menu>

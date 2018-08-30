@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/order_review" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+    <com.puzzlersworld.android.util.CustomFontTextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/orderReviewTitle" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include layout="@layout/display_price"/>
+    <View android:id="@+id/separator3" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <com.puzzlersworld.android.util.CustomFontTextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/billingaddressHeader" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.puzzlersworld.android.util.CustomFontTextView android:id="@+id/billingaddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="false"/>
+    </LinearLayout>
+    <View android:id="@+id/separator4" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <com.puzzlersworld.android.util.CustomFontTextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/shippingAddressHeader" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.puzzlersworld.android.util.CustomFontTextView android:id="@+id/shipping_address" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="false"/>
+    </LinearLayout>
+</LinearLayout>

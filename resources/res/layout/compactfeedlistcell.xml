@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/feedItemLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.CardView android:id="@+id/cardview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_alignParentTop="true" app:cardBackgroundColor="@color/feedBgColor" app:cardCornerRadius="0dp" app:cardElevation="8sp" app:cardUseCompatPadding="false">
+        <RelativeLayout android:gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/post_image" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_margin="5dp" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentTop="true"/>
+            <RelativeLayout android:gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_toRightOf="@+id/post_image" android:layout_alignParentTop="true">
+                <com.puzzlersworld.android.util.CustomFontTextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/feedTitleColor" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:layout_alignParentTop="true"/>
+                <com.puzzlersworld.android.util.CustomFontTextView android:textSize="12sp" android:textColor="@color/feedContentTextColor" android:ellipsize="end" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:scrollHorizontally="false" android:layout_below="@+id/title"/>
+                <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@+id/cattimelayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/content" android:layout_alignParentBottom="true">
+                    <com.puzzlersworld.android.util.CustomFontTextView android:textSize="12sp" android:textColor="@color/tagBgColor" android:id="@+id/category" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <com.puzzlersworld.android.util.CustomFontTextView android:textSize="12sp" android:textColor="@color/timeTextColor" android:id="@+id/time" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

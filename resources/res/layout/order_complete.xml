@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/order_complete" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+    <com.puzzlersworld.android.util.CustomFontTextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/orderCompleteTitle" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/orderDetails" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

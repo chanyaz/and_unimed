@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/descriptionView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:cardCornerRadius="0dp" app:cardElevation="8sp" app:cardUseCompatPadding="false">
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <com.puzzlersworld.android.util.CustomFontTextView android:textSize="25sp" android:textColor="@color/feedTitleColor" android:id="@+id/descriptionTitle" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="10dp" android:layout_alignParentTop="true"/>
+        <com.puzzlersworld.android.util.CustomFontTextView android:textSize="16sp" android:textColor="@color/feedContentTextColor" android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_below="@+id/descriptionTitle"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

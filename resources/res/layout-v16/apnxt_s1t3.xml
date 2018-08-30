@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#474646" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/privacy" android:paddingRight="14dp" android:paddingBottom="14dp" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/apnxt_ads_i_icon" android:layout_alignParentLeft="true"/>
+    <TextView android:textStyle="normal|bold|italic" android:textColor="@android:color/white" android:id="@+id/timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="12dp" android:text="6 sec" android:layout_alignParentRight="true"/>
+    <TextView android:textSize="26sp" android:textColor="@android:color/white" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Which Video" android:layout_toRightOf="@+id/privacy" android:layout_below="@+id/privacy" android:scaleY="1.1"/>
+    <TextView android:textSize="27sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/secondTile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="would you like to watch?" android:layout_below="@+id/title" android:layout_alignLeft="@+id/title" android:scaleY="1.1" android:fontFamily="sans-serif"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp" android:layout_below="@+id/secondTile">
+        <include android:id="@+id/item1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" layout="@layout/apnxt_s1t3_item"/>
+        <include android:id="@+id/item2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" layout="@layout/apnxt_s1t3_item"/>
+    </LinearLayout>
+</RelativeLayout>

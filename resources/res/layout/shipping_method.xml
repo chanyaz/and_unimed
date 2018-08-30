@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/shipping_method" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+    <com.puzzlersworld.android.util.CustomFontTextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/shippingMethodTitle" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RadioGroup android:orientation="vertical" android:id="@+id/shippingRadio" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText android:theme="@style/MyMaterialTheme" android:id="@+id/order_note" android:layout_width="match_parent" android:layout_height="60dp"/>
+</LinearLayout>

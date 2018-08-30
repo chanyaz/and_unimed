@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/productDetailLayout" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.puzzlersworld.android.util.CustomFontTextView android:textSize="25sp" android:textColor="@color/feedTitleColor" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp"/>
+        <ImageView android:id="@+id/post_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:adjustViewBounds="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/priceLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_below="@+id/header">
+        <RelativeLayout android:gravity="center_horizontal" android:id="@+id/priceRelativeLayout" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.puzzlersworld.android.util.CustomFontTextView android:textSize="25sp" android:textColor="@color/feedTitleColor" android:id="@+id/sellingprice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+            <com.puzzlersworld.android.util.CustomFontTextView android:textSize="16sp" android:textColor="@color/feedTitleColor" android:id="@+id/mrp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_below="@+id/sellingprice"/>
+            <com.puzzlersworld.android.util.CustomFontTextView android:textSize="16sp" android:textColor="@color/feedTitleColor" android:id="@+id/reviews" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/productMetaLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/priceLayout"/>
+</RelativeLayout>
